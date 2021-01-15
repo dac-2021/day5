@@ -1,7 +1,7 @@
 const fs = require("fs");
 const Promise = require("bluebird");
 
-// It will convert the Callback Aware Api into Promise aware API using bluebird
+// It will convert the Callback Aware method into Promise aware method using bluebird
 Promise.promisifyAll(fs);
 
 async function main() {
